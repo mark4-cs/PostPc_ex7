@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_OrderScreenTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".editOrderActivity">
+
+
+    <CheckBox
+        android:id="@+id/edit_checkBoxTahini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Tahini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_checkBoxHummus" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_setNewOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:id="@+id/edit_newOrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00BCD4"
+        android:backgroundTint="@color/teal_700"
+        android:text="Edit your order"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/edit_picklesBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintBottom_toTopOf="@+id/edit_editTextInsertcomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/edit_amountOfPicklesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Pickles amount: 5"
+        app:layout_constraintBottom_toTopOf="@+id/edit_picklesBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/edit_checkBoxHummus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Hummus"
+        app:layout_constraintBottom_toTopOf="@+id/edit_picklesBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_newOrderTitle" />
+
+    <EditText
+        android:id="@+id/edit_editTextInsertcomment"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="4dp"
+        android:hint="Add comment..."
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_setNewOrderButton"
+        app:layout_constraintEnd_toStartOf="@id/edit_setNewOrderButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_setNewOrderButton" />
+
+    <EditText
+        android:id="@+id/edit_editTextInsertCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:elevation="4dp"
+        android:hint="Customer name.."
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_checkBoxHummus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/edit_deleteOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#A1000000"
+        android:text="Delete order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_newOrderTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

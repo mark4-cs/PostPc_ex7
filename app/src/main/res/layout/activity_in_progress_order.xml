@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/OrderScreenTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".inProgressOrderActivity">
+
+
+    <TextView
+        android:id="@+id/InProgressOrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00BCD4"
+        android:backgroundTint="@color/teal_700"
+        android:text="Order In Progress"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rachel is working on your order, she will let you know once it is ready."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InProgressOrderTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
